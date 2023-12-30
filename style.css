@@ -258,3 +258,33 @@ body.battery-saver-mode img {
 .battery-toggle-switch-checkbox:checked + .battery-toggle-switch-label .battery-toggle-switch-switch {
 	transform: translateX(30px);
 }
+
+#newsletter-form {
+	background-color: #f0f0f0;
+	padding: 20px;
+	text-align: center;
+}
+
+#newsletter-form label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+#newsletter-form input[type="email"] {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 15px;
+	box-sizing: border-box;
+}
+
+#newsletter-form button {
+	background-color: #3498db;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	cursor: pointer;
+}
+
+#newsletter-form button:hover {
+	background-color: #2980b9;
+}
