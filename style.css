@@ -1,0 +1,260 @@
+.toggle-switch {
+	display: inline;
+	vertical-align: middle;
+}
+
+.battery-toggle-switch{
+	display: inline;
+	margin: -50px;
+    padding-top: -50px;
+	margin-left: 50px; /* Change button location */
+
+}
+
+/* Light mode */
+body {
+	background-color: #fff;
+	color: #333;
+}
+
+header {
+	background-color: #333;;
+	border-bottom: 1px solid #ddd;
+}
+
+footer {
+	background-color:#333;;
+	border-top: 1px solid #ddd;
+	text-align: center;
+	border-bottom-left-radius: 500px;
+}
+
+.toggle-switch-text {
+	color: #777;
+    padding: auto;
+
+}
+
+/* Dark mode */
+body.dark-mode {
+	background-color: #333;
+	color: #fff;
+}
+
+header.dark-mode {
+	background-color: #111;
+	border-bottom: 1px solid #444;
+    color: #111;
+}
+
+footer.dark-mode {
+	background-color: #111;
+	border-top: 1px solid #444;
+    color: #111;
+}
+
+.toggle-switch-text.dark-mode {
+	color: #fff;
+}
+
+/* Toggle switch styles */
+.toggle-switch-checkbox {
+	display: none;
+}
+
+.toggle-switch-label {
+	display: inline-block;
+	position: relative;
+	width: 60px;
+	height: 30px;
+	cursor: pointer;
+}
+
+.toggle-switch-inner {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	transition: background-color 0.5s ease;
+	background-color: #ccc;
+	border-radius: 30px;
+}
+
+.toggle-switch-switch {
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	width: 26px;
+	height: 26px;
+	transition: transform 0.5s ease;
+	background-color: #fff;
+	border-radius: 50%;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.toggle-switch-checkbox:checked + .toggle-switch-label .toggle-switch-inner {
+	background-color: #2196f3;
+}
+
+.toggle-switch-checkbox:checked + .toggle-switch-label .toggle-switch-switch {
+	transform: translateX(30px);
+}
+
+
+
+/* General styles */
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	transition: background-color 0.5s ease;
+}
+
+header, main, footer {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+
+}
+
+header{
+    text-align: center;
+    color: white;
+	border-top-right-radius: 500px;
+}
+
+footer{
+    color: white;
+}
+h1 {
+	font-size: 2.5em;
+	margin-top: 0;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+p {
+	line-height: 1.5;
+	margin-bottom: 1.5em;
+}
+
+/*Text Only Mode*/
+body.text-only-mode img {
+	display: none;
+}
+
+.text-toggle-switch {
+	display: inline;
+	margin: 10px;
+    padding-top: 50px;
+	margin-left: 50px; 
+	margin-bottom: 20px;/* Change button location */
+}
+
+.text-toggle-switch-text{
+	display: inline-block;
+	padding-left: 0px;
+	padding-top: 35px;
+	text-align: left;
+	vertical-align: middle;	
+}
+body.text-only-mode img {
+	display: none;
+}
+
+.text-toggle-switch-checkbox {
+	display: none;
+}
+
+.text-toggle-switch-label {
+	display: inline-block;
+	position: relative;
+	width: 60px;
+	height: 30px;
+	margin-top: 20px;
+	cursor: pointer;
+}
+
+.text-toggle-switch-inner {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	transition: background-color 0.5s ease;
+	background-color: #ccc;
+	border-radius: 30px;
+}
+
+.text-toggle-switch-switch {
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	width: 26px;
+	height: 26px;
+	transition: transform 0.5s ease;
+	background-color: #fff;
+	border-radius: 50%;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.text-toggle-switch-checkbox:checked + .text-toggle-switch-label .text-toggle-switch-inner {
+	background-color: #2196f3;
+}
+
+.text-toggle-switch-checkbox:checked + .text-toggle-switch-label .text-toggle-switch-switch {
+	transform: translateX(30px);
+}
+
+
+/* Battery saver mode styles */
+body.battery-saver-mode img {
+    display: none;
+}
+
+.battery-toggle-switch-checkbox {
+	display: none;
+	margin-top: -50px;
+}
+
+.battery-toggle-switch-label {
+	display: inline-block;
+	position: relative;
+	width: 60px;
+	height: 30px;
+	cursor: pointer;
+}
+
+.battery-toggle-switch-inner {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	transition: background-color 0.1s ease;
+	background-color: #ccc;
+	border-radius: 30px;
+}
+
+.battery-toggle-switch-switch {
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	width: 26px;
+	height: 26px;
+	transition: transform 0.1s ease;
+	background-color: #fff;
+	border-radius: 50%;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.battery-toggle-switch-checkbox:checked + .battery-toggle-switch-label .battery-toggle-switch-inner {
+	background-color: #2196f3;
+}
+
+.battery-toggle-switch-checkbox:checked + .battery-toggle-switch-label .battery-toggle-switch-switch {
+	transform: translateX(30px);
+}
